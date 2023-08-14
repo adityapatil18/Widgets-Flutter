@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:widgets/Home/Widgets/absorb_pointer.dart';
 import 'package:widgets/Home/Widgets/alert_dailoge.dart';
 import 'package:widgets/Home/Widgets/align_widget.dart';
-import 'package:widgets/Home/animated_align.dart';
-import 'package:widgets/Home/animated_builder.dart';
-import 'package:widgets/Home/animated_container.dart';
-import 'package:widgets/Home/animated_cross_fade.dart';
+import 'package:widgets/Home/Widgets/animated_align.dart';
+import 'package:widgets/Home/Widgets/animated_builder.dart';
+import 'package:widgets/Home/Widgets/animated_container.dart';
+import 'package:widgets/Home/Widgets/animated_cross_fade.dart';
 import 'package:widgets/Home/home_page.dart';
 
 void main() {
