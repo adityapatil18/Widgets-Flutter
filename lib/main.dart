@@ -1,4 +1,18 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:widgets/Home/Cupertino_Widgets/cupertino_action_sheet_action.dart';
+import 'package:widgets/Home/Cupertino_Widgets/cupertino_activity_indicator.dart';
+import 'package:widgets/Home/Cupertino_Widgets/cupertino_alert_dailog.dart';
+import 'package:widgets/Home/Cupertino_Widgets/cupertino_app.dart';
+import 'package:widgets/Home/Cupertino_Widgets/cupertino_button.dart';
+import 'package:widgets/Home/Cupertino_Widgets/cupertino_context_menu.dart';
+import 'package:widgets/Home/Cupertino_Widgets/cupertino_date_picker.dart';
+import 'package:widgets/Home/Cupertino_Widgets/cupertino_page_route.dart';
+import 'package:widgets/Home/Cupertino_Widgets/cupertino_page_scffold.dart';
+import 'package:widgets/Home/Cupertino_Widgets/cupertino_picker.dart';
+import 'package:widgets/Home/Cupertino_Widgets/cupertino_popup_surface.dart';
+import 'package:widgets/Home/Cupertino_Widgets/cupertino_scroll_bar.dart';
+import 'package:widgets/Home/Cupertino_Widgets/cupertino_slider.dart';
 import 'package:widgets/Home/Widgets/absorb_pointer.dart';
 import 'package:widgets/Home/Widgets/alert_dailoge.dart';
 import 'package:widgets/Home/Widgets/align_widget.dart';
@@ -17,8 +31,30 @@ import 'package:widgets/Home/Widgets/animated_size.dart';
 import 'package:widgets/Home/Widgets/animated_switcher.dart';
 import 'package:widgets/Home/Widgets/app_bar.dart';
 import 'package:widgets/Home/Widgets/aspect_ratio.dart';
+import 'package:widgets/Home/Widgets/circle_avatar.dart';
+import 'package:widgets/Home/Widgets/circular_progress_indicator.dart';
+import 'package:widgets/Home/Widgets/clip_oval.dart';
+import 'package:widgets/Home/Widgets/clip_path.dart';
+import 'package:widgets/Home/Widgets/clip_rect.dart';
+import 'package:widgets/Home/Widgets/clip_rrect.dart';
+import 'package:widgets/Home/Widgets/close_button_widget.dart';
+import 'package:widgets/Home/Widgets/color_filtered.dart';
+import 'package:widgets/Home/Widgets/colored_box.dart';
+import 'package:widgets/Home/Widgets/column.dart';
+import 'package:widgets/Home/Widgets/constrained_box.dart';
+import 'package:widgets/Home/Widgets/container.dart';
+import 'package:widgets/Home/Widgets/custom_paint.dart';
+import 'package:widgets/Home/Widgets/custom_scroll_view.dart';
+import 'package:widgets/Home/Widgets/data_table.dart';
 
-
+import 'Home/Cupertino_Widgets/cupertino_search_text_field.dart';
+import 'Home/Cupertino_Widgets/cupertino_segemented_controller.dart';
+import 'Home/Cupertino_Widgets/cupertino_slided_segmented_controller.dart';
+import 'Home/Cupertino_Widgets/cupertino_switch.dart';
+import 'Home/Cupertino_Widgets/cupertino_tab_bar.dart';
+import 'Home/Cupertino_Widgets/cupertino_tab_scaffold.dart';
+import 'Home/Cupertino_Widgets/cupertino_tab_view.dart';
+import 'Home/Cupertino_Widgets/cupertino_text_field.dart';
 import 'Home/Widgets/animated_default_text_style.dart';
 import 'Home/Widgets/animated_modal_barrier.dart';
 import 'Home/Widgets/auto_complete.dart';
@@ -82,10 +118,49 @@ class Widgets extends StatelessWidget {
         'builder': (context) => BuilderWidget(),
         'card': (context) => CardWidget(),
         'center': (context) => CenterWidget(),
-        'checkBox':(context) => CheckBoxWidget(),
-        'checkBoxListStyle':(context) => CheckboxListTileWidget(),
-        'chip':(context) => ChipWidget(),
-        'choiceChip':(context) => ChoiceChipWidget(),
+        'checkBox': (context) => CheckBoxWidget(),
+        'checkBoxListStyle': (context) => CheckboxListTileWidget(),
+        'chip': (context) => ChipWidget(),
+        'choiceChip': (context) => ChoiceChipWidget(),
+        'circleAvatar': (context) => CircleAvatarWidget(),
+        'circularProgressIndicator': (context) =>
+            CircularProgressIndicatorWidget(),
+        'clipOval': (context) => ClipOvalWidget(),
+        'clipPath': (context) => ClipPathWidget(),
+        'clipRect': (context) => ClipRectWidget(),
+        'clipRRect': (context) => ClipRRectWidget(),
+        'closeButton': (context) => CloseButtonWidget(),
+        'coloredBox': (context) => ColoredBoxWidget(),
+        'colorFiltered': (context) => ColorFilteredWidget(),
+        'constrainedBox': (context) => ConstrainedBoxWidget(),
+        'container': (context) => ContainerWidget(),
+        'column': (context) => ColumnWidget(),
+        'cupertinoActionSheetAction': (context) =>
+            CupertinoActionSheetActionWidget(),
+        'cupertinoApp': (context) => CupertinoAppWidget(),
+        'cupertinoActivityIndicator': (context) =>
+            CupertinoActivityIndicatorWidget(),
+        'cupertinoAlertFDailog': (context) => CupertinoAlertDailogWidget(),
+        'cupertinoButton': (context) => CupertinoButtonWidget(),
+        'cupertinoContextMenu': (context) => CupertinoContextMenuWidget(),
+        'cupertinoDatePicker': (context) => CupertinoDatePickerWidget(),
+        'cupertinoPageRoute': (context) => CupertinoPageRouteWidget(),
+        'cupertinoScaffoldPage': (context) => CupertinoPageScaffoldWidget(),
+        'cupertinoPicker': (context) => CupertinoPickerWidget(),
+        'cupertinoPopUpSurface':(context) => CupertinoPopUpSurfaceWidget(),
+        'cupertinoScrollBar':(context) => CupertinoScrollBarWidget(),
+        'cupertinoSearchTextFieldWidget':(context) => CupertinoSearchTextFieldWidget(),
+        'cupertinoSegmentedControllerWidget':(context) => CupertinoSegmentedControllerWidget(),
+        'cupertinoSliderWidget':(context) => CupertinoSliderWidget(),
+        'cupertinoSlidingSegmentedController':(context) => CupertinoSlidingSegmentedControllerWidget(),
+      'cupertinoSwitch':(context) => CupertinoSwitchWidget(),
+      'cupertinoTabScaffold':(context) => CupertinoTabScaffoldWidget(),
+      'cupertinoTabBar':(context) => CupertinoTabBarWidget(),
+      'cupertinoTabView':(context) => CupertinoTabViewWidget(),
+      'cupertinoTextField':(context) => CupertinoTextFieldWidget(),
+      'customPaint':(context) => CustomPaintWidget(),
+      'customScrollView':(context) => CustomScrollViewWidget(),
+      'dataTable':(context) => DataTableWidget(),
       },
     );
   }
