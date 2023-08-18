@@ -45,7 +45,34 @@ import 'package:widgets/Home/Widgets/constrained_box.dart';
 import 'package:widgets/Home/Widgets/container.dart';
 import 'package:widgets/Home/Widgets/custom_paint.dart';
 import 'package:widgets/Home/Widgets/custom_scroll_view.dart';
+import 'package:widgets/Home/Widgets/data_cell.dart';
+import 'package:widgets/Home/Widgets/data_column.dart';
+import 'package:widgets/Home/Widgets/data_row.dart';
 import 'package:widgets/Home/Widgets/data_table.dart';
+import 'package:widgets/Home/Widgets/date_picker.dart';
+import 'package:widgets/Home/Widgets/date_range_picker.dart';
+import 'package:widgets/Home/Widgets/decorated_box.dart';
+import 'package:widgets/Home/Widgets/dismissible.dart';
+import 'package:widgets/Home/Widgets/divider.dart';
+import 'package:widgets/Home/Widgets/drag_target.dart';
+import 'package:widgets/Home/Widgets/draggable.dart';
+import 'package:widgets/Home/Widgets/draggable_scrolable.dart';
+import 'package:widgets/Home/Widgets/drawer.dart';
+import 'package:widgets/Home/Widgets/drawer_header.dart';
+import 'package:widgets/Home/Widgets/drop_down_button.dart';
+import 'package:widgets/Home/Widgets/elevated_button.dart';
+import 'package:widgets/Home/Widgets/error_details.dart';
+import 'package:widgets/Home/Widgets/expanded_icon.dart';
+import 'package:widgets/Home/Widgets/expanded_widget.dart';
+import 'package:widgets/Home/Widgets/expansion_pannel.dart';
+import 'package:widgets/Home/Widgets/expansion_pannel_list.dart';
+import 'package:widgets/Home/Widgets/expansion_tile.dart';
+import 'package:widgets/Home/Widgets/fade_in_image.dart';
+import 'package:widgets/Home/Widgets/fade_transition.dart';
+import 'package:widgets/Home/Widgets/filter_chip.dart';
+import 'package:widgets/Home/Widgets/fitted_box.dart';
+import 'package:widgets/Home/Widgets/flixeble.dart';
+import 'package:widgets/Home/Widgets/floating_action_button.dart';
 
 import 'Home/Cupertino_Widgets/cupertino_search_text_field.dart';
 import 'Home/Cupertino_Widgets/cupertino_segemented_controller.dart';
@@ -71,6 +98,8 @@ import 'Home/Widgets/check_box.dart';
 import 'Home/Widgets/checkbox_List_Tile.dart';
 import 'Home/Widgets/chip.dart';
 import 'Home/Widgets/choice_chip.dart';
+import 'Home/Widgets/decorated_box_transition.dart';
+import 'Home/Widgets/default_text_style.dart';
 import 'Home/home_page.dart';
 
 void main() {
@@ -83,6 +112,7 @@ class Widgets extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: HomePage(),
       routes: {
         'aboutDialog': (context) => AboutDialog(),
@@ -147,20 +177,53 @@ class Widgets extends StatelessWidget {
         'cupertinoPageRoute': (context) => CupertinoPageRouteWidget(),
         'cupertinoScaffoldPage': (context) => CupertinoPageScaffoldWidget(),
         'cupertinoPicker': (context) => CupertinoPickerWidget(),
-        'cupertinoPopUpSurface':(context) => CupertinoPopUpSurfaceWidget(),
-        'cupertinoScrollBar':(context) => CupertinoScrollBarWidget(),
-        'cupertinoSearchTextFieldWidget':(context) => CupertinoSearchTextFieldWidget(),
-        'cupertinoSegmentedControllerWidget':(context) => CupertinoSegmentedControllerWidget(),
-        'cupertinoSliderWidget':(context) => CupertinoSliderWidget(),
-        'cupertinoSlidingSegmentedController':(context) => CupertinoSlidingSegmentedControllerWidget(),
-      'cupertinoSwitch':(context) => CupertinoSwitchWidget(),
-      'cupertinoTabScaffold':(context) => CupertinoTabScaffoldWidget(),
-      'cupertinoTabBar':(context) => CupertinoTabBarWidget(),
-      'cupertinoTabView':(context) => CupertinoTabViewWidget(),
-      'cupertinoTextField':(context) => CupertinoTextFieldWidget(),
-      'customPaint':(context) => CustomPaintWidget(),
-      'customScrollView':(context) => CustomScrollViewWidget(),
-      'dataTable':(context) => DataTableWidget(),
+        'cupertinoPopUpSurface': (context) => CupertinoPopUpSurfaceWidget(),
+        'cupertinoScrollBar': (context) => CupertinoScrollBarWidget(),
+        'cupertinoSearchTextFieldWidget': (context) =>
+            CupertinoSearchTextFieldWidget(),
+        'cupertinoSegmentedControllerWidget': (context) =>
+            CupertinoSegmentedControllerWidget(),
+        'cupertinoSliderWidget': (context) => CupertinoSliderWidget(),
+        'cupertinoSlidingSegmentedController': (context) =>
+            CupertinoSlidingSegmentedControllerWidget(),
+        'cupertinoSwitch': (context) => CupertinoSwitchWidget(),
+        'cupertinoTabScaffold': (context) => CupertinoTabScaffoldWidget(),
+        'cupertinoTabBar': (context) => CupertinoTabBarWidget(),
+        'cupertinoTabView': (context) => CupertinoTabViewWidget(),
+        'cupertinoTextField': (context) => CupertinoTextFieldWidget(),
+        'customPaint': (context) => CustomPaintWidget(),
+        'customScrollView': (context) => CustomScrollViewWidget(),
+        'dataTable': (context) => DataTableWidget(),
+        'dataColumn': (context) => DataColumnWidget(),
+        'dataCell': (context) => DataCellWidget(),
+        'dataRow': (context) => DataRowWidget(),
+        'datePicker': (context) => DatePickerWidget(),
+        'dateRangePicker': (context) => DateRangePickerWidget(),
+        'decoratedBox': (context) => DecoratedBoxWidget(),
+        'decoratedBoxTransition': (context) => DecoratedBoxTransitionWidget(),
+        'defaultTextStyle': (context) => DefaultTextStyleWidget(),
+        'dismissible': (context) => DismissibleWidget(),
+        'divider': (context) => DivideWidget(),
+        'dragableScrollable': (context) => DragableScrollableWidget(),
+        'dragTarget': (context) => DragTargetWidget(),
+        'draggable': (context) => DraggableWidget(),
+        'drawer': (context) => DrawerWidget(),
+        'drawerHeader': (context) => DrawerHeaderWidget(),
+        'dropDownButton': (context) => DropDownButtonWidget(),
+        'elevatedButton': (context) => ElevatedButtonWidget(),
+        'errorDetails': (context) => ErrorDetailsWidget(),
+        'expanded': (context) => ExpandedWidget(),
+        'expandedIcon': (context) => ExpandedIconWidget(),
+        'expansionPannelList':(context) => ExpansionPannelListWidget(),
+        'expansionPannel':(context) => ExpansionPannelWidget(),
+        'expansionTile':(context) => ExpansionTileWidget(),
+        'fadeInImage':(context) => FadeInImageWidget(),
+        'fadeTransition':(context) => FadeTransitionWidget(),
+        'filterChip':(context) => FilterChipWidget(),
+        'fittedBox':(context) => FittedWidget(),
+        'flexible':(context) => FlexibleWidget(),
+        'floatingActionButton':(context) => FloatingActionButtonWidget(),
+        // 'flow':(context) => FlowWidget(),
       },
     );
   }

@@ -416,7 +416,7 @@ class HomePage extends StatelessWidget {
                 Navigator.pushNamed(context, 'cupertinoTabBar');
               },
             ),
-             ListTile(
+            ListTile(
               title: Text('cupertino Tab view '),
               onTap: () {
                 Navigator.pushNamed(context, 'cupertinoTabView');
@@ -428,7 +428,7 @@ class HomePage extends StatelessWidget {
                 Navigator.pushNamed(context, 'cupertinoTextField');
               },
             ),
-                        ListTile(
+            ListTile(
               title: Text('Custom Paint '),
               onTap: () {
                 Navigator.pushNamed(context, 'customPaint');
@@ -440,12 +440,192 @@ class HomePage extends StatelessWidget {
                 Navigator.pushNamed(context, 'customScrollView');
               },
             ),
-                        ListTile(
+            ListTile(
               title: Text('Data Table '),
               onTap: () {
                 Navigator.pushNamed(context, 'dataTable');
               },
             ),
+            ListTile(
+              title: Text('Data Column '),
+              onTap: () {
+                Navigator.pushNamed(context, 'dataColumn');
+              },
+            ),
+            ListTile(
+              title: Text('Data Cell '),
+              onTap: () {
+                Navigator.pushNamed(context, 'dataCell');
+              },
+            ),
+            ListTile(
+              title: Text('Data Row '),
+              onTap: () {
+                Navigator.pushNamed(context, 'dataRow');
+              },
+            ),
+            ListTile(
+              title: Text('Date Picker '),
+              onTap: () {
+                Navigator.pushNamed(context, 'datePicker');
+              },
+            ),
+            ListTile(
+              title: Text('Date Range Picker '),
+              onTap: () {
+                Navigator.pushNamed(context, 'dateRangePicker');
+              },
+            ),
+            ListTile(
+              title: Text('Decorated Box   '),
+              onTap: () {
+                Navigator.pushNamed(context, 'decoratedBox');
+              },
+            ),
+            ListTile(
+              title: Text('Decorated Box Transition  '),
+              onTap: () {
+                Navigator.pushNamed(context, 'decoratedBoxTransition');
+              },
+            ),
+            ListTile(
+              title: Text('Default Text Style  '),
+              onTap: () {
+                Navigator.pushNamed(context, 'defaultTextStyle');
+              },
+            ),
+            ListTile(
+              title: Text('Dismissible  '),
+              onTap: () {
+                Navigator.pushNamed(context, 'dismissible');
+              },
+            ),
+            ListTile(
+              title: Text('Divider  '),
+              onTap: () {
+                Navigator.pushNamed(context, 'divider');
+              },
+            ),
+            ListTile(
+              title: Text('Dragable Scrollable  '),
+              onTap: () {
+                Navigator.pushNamed(context, 'dragableScrollable');
+              },
+            ),
+            ListTile(
+              title: Text('Drag Target  '),
+              onTap: () {
+                Navigator.pushNamed(context, 'dragTarget');
+              },
+            ),
+            ListTile(
+              title: Text('Draggable  '),
+              onTap: () {
+                Navigator.pushNamed(context, 'draggable');
+              },
+            ),
+            ListTile(
+              title: Text('Drawer  '),
+              onTap: () {
+                Navigator.pushNamed(context, 'drawer');
+              },
+            ),
+            ListTile(
+              title: Text('Drawer Header  '),
+              onTap: () {
+                Navigator.pushNamed(context, 'drawerHeader');
+              },
+            ),
+            ListTile(
+              title: Text('Drop Down Button  '),
+              onTap: () {
+                Navigator.pushNamed(context, 'dropDownButton');
+              },
+            ),
+            ListTile(
+              title: Text('Eleavted Button  '),
+              onTap: () {
+                Navigator.pushNamed(context, 'elevatedButton');
+              },
+            ),
+            ListTile(
+              title: Text('Error Details  '),
+              onTap: () {
+                Navigator.pushNamed(context, 'errordetails');
+              },
+            ),
+            ListTile(
+              title: Text('Expanded  '),
+              onTap: () {
+                Navigator.pushNamed(context, 'expanded');
+              },
+            ),
+            ListTile(
+              title: Text('Expanded Icon '),
+              onTap: () {
+                Navigator.pushNamed(context, 'expandedIcon');
+              },
+            ),
+            ListTile(
+              title: Text('Expansion Pannel List '),
+              onTap: () {
+                Navigator.pushNamed(context, 'expansionPannelList');
+              },
+            ),
+            ListTile(
+              title: Text('Expansion Pannel  '),
+              onTap: () {
+                Navigator.pushNamed(context, 'expansionPannel');
+              },
+            ),
+            ListTile(
+              title: Text('Expansion Tile  '),
+              onTap: () {
+                Navigator.pushNamed(context, 'expansionTile');
+              },
+            ),
+            ListTile(
+              title: Text('Fade In Image   '),
+              onTap: () {
+                Navigator.pushNamed(context, 'fadeInImage');
+              },
+            ),
+            ListTile(
+              title: Text('Fade Transition   '),
+              onTap: () {
+                Navigator.pushNamed(context, 'fadeTransition');
+              },
+            ),
+            ListTile(
+              title: Text('Filter Chip   '),
+              onTap: () {
+                Navigator.pushNamed(context, 'filterChip');
+              },
+            ),
+            ListTile(
+              title: Text('Fitted Box   '),
+              onTap: () {
+                Navigator.pushNamed(context, 'fittedBox');
+              },
+            ),
+            ListTile(
+              title: Text(' Flexible   '),
+              onTap: () {
+                Navigator.pushNamed(context, 'flexible');
+              },
+            ),
+            ListTile(
+              title: Text(' Floating Action Button   '),
+              onTap: () {
+                Navigator.pushNamed(context, 'floatingActionButton');
+              },
+            ),
+            // ListTile(
+            //   title: Text(' Flow   '),
+            //   onTap: () {
+            //     Navigator.pushNamed(context, 'flow');
+            //   },
+            // ),
           ],
         ),
       ),
