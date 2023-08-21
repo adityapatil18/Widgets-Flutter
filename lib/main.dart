@@ -73,6 +73,41 @@ import 'package:widgets/Home/Widgets/filter_chip.dart';
 import 'package:widgets/Home/Widgets/fitted_box.dart';
 import 'package:widgets/Home/Widgets/flixeble.dart';
 import 'package:widgets/Home/Widgets/floating_action_button.dart';
+import 'package:widgets/Home/Widgets/flutter_logo.dart';
+import 'package:widgets/Home/Widgets/form.dart';
+import 'package:widgets/Home/Widgets/fractional_translation.dart';
+import 'package:widgets/Home/Widgets/future_builder.dart';
+import 'package:widgets/Home/Widgets/gesture_detector.dart';
+import 'package:widgets/Home/Widgets/grid_paper.dart';
+import 'package:widgets/Home/Widgets/grid_tile.dart';
+import 'package:widgets/Home/Widgets/grid_tile_bar.dart';
+import 'package:widgets/Home/Widgets/grid_view.dart';
+import 'package:widgets/Home/Widgets/hero.dart';
+import 'package:widgets/Home/Widgets/icon.dart';
+import 'package:widgets/Home/Widgets/icon_button.dart';
+import 'package:widgets/Home/Widgets/ignore_pointer.dart';
+import 'package:widgets/Home/Widgets/image.dart';
+import 'package:widgets/Home/Widgets/indexed_stack.dart';
+import 'package:widgets/Home/Widgets/inkwell.dart';
+import 'package:widgets/Home/Widgets/input_chip.dart';
+import 'package:widgets/Home/Widgets/interactive_viewer.dart';
+import 'package:widgets/Home/Widgets/layout_builder.dart';
+import 'package:widgets/Home/Widgets/limited_box.dart';
+import 'package:widgets/Home/Widgets/linear_progress_indicator.dart';
+import 'package:widgets/Home/Widgets/list_tile.dart';
+import 'package:widgets/Home/Widgets/list_view.dart';
+import 'package:widgets/Home/Widgets/list_wheel_scroll_view.dart';
+import 'package:widgets/Home/Widgets/listner.dart';
+import 'package:widgets/Home/Widgets/long_press_draggle.dart';
+import 'package:widgets/Home/Widgets/material_app.dart';
+import 'package:widgets/Home/Widgets/material_banner.dart';
+import 'package:widgets/Home/Widgets/material_button.dart';
+import 'package:widgets/Home/Widgets/merge_semantics.dart';
+import 'package:widgets/Home/Widgets/modal_barrier.dart';
+import 'package:widgets/Home/Widgets/mouse_region.dart';
+import 'package:widgets/Home/Widgets/navigation_bar.dart';
+import 'package:widgets/Home/Widgets/notification_listener.dart';
+import 'package:widgets/Home/Widgets/offStage.dart';
 
 import 'Home/Cupertino_Widgets/cupertino_search_text_field.dart';
 import 'Home/Cupertino_Widgets/cupertino_segemented_controller.dart';
@@ -100,6 +135,7 @@ import 'Home/Widgets/chip.dart';
 import 'Home/Widgets/choice_chip.dart';
 import 'Home/Widgets/decorated_box_transition.dart';
 import 'Home/Widgets/default_text_style.dart';
+import 'Home/Widgets/fractionally_sized_box.dart';
 import 'Home/home_page.dart';
 
 void main() {
@@ -113,6 +149,7 @@ class Widgets extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      // showSemanticsDebugger: true,
       home: HomePage(),
       routes: {
         'aboutDialog': (context) => AboutDialog(),
@@ -214,15 +251,52 @@ class Widgets extends StatelessWidget {
         'errorDetails': (context) => ErrorDetailsWidget(),
         'expanded': (context) => ExpandedWidget(),
         'expandedIcon': (context) => ExpandedIconWidget(),
-        'expansionPannelList':(context) => ExpansionPannelListWidget(),
-        'expansionPannel':(context) => ExpansionPannelWidget(),
-        'expansionTile':(context) => ExpansionTileWidget(),
-        'fadeInImage':(context) => FadeInImageWidget(),
-        'fadeTransition':(context) => FadeTransitionWidget(),
-        'filterChip':(context) => FilterChipWidget(),
-        'fittedBox':(context) => FittedWidget(),
-        'flexible':(context) => FlexibleWidget(),
-        'floatingActionButton':(context) => FloatingActionButtonWidget(),
+        'expansionPannelList': (context) => ExpansionPannelListWidget(),
+        'expansionPannel': (context) => ExpansionPannelWidget(),
+        'expansionTile': (context) => ExpansionTileWidget(),
+        'fadeInImage': (context) => FadeInImageWidget(),
+        'fadeTransition': (context) => FadeTransitionWidget(),
+        'filterChip': (context) => FilterChipWidget(),
+        'fittedBox': (context) => FittedWidget(),
+        'flexible': (context) => FlexibleWidget(),
+        'floatingActionButton': (context) => FloatingActionButtonWidget(),
+        'flutterLogo': (context) => FlutterLogoWidget(),
+        'form': (context) => FormWidget(),
+        'fractionallySizedBox': (context) => FractionallySizedBoxWidget(),
+        'fractionalTransalation': (context) => FractionalTranslationWidget(),
+        'futureBuilder': (context) => FutureBuilderWidget(),
+        'gestureDetector': (context) => GestureDetectorWidget(),
+        'gridPaper': (context) => GridPaperWidget(),
+        'gridTile':(context) => GridTileWidget(),
+        'gridTileBar':(context) => GridTileBarWidget(),
+        'gridView':(context) => GridViewWidget(),
+        'hero':(context) => HeroWidget(),
+        'icon':(context) => IconWidget(),
+        'iconButton':(context) => IconButtonWidget(),
+        'ignorePointer':(context) => IgnorePointerWidget(),
+        'image':(context) => ImahgeWidget(),
+        'indexedStack':(context) => IndexedStackWidget(),
+        'inkwell':(context) => InkWellWidget(),
+        'inputChip':(context) => InputChipWidget(),
+        'interactiveViwer':(context) => InteractiveViwerWidget(),
+        'layoutBuilder':(context) => LayoutBuilderWidget(),
+        'limitedBox':(context) => LimittedBoxWidget(),
+        'linearProgressIndicator':(context) => LinearProgressIndicatorWidgets(),
+        'listner':(context) => ListnerWidget(),
+        'lisTile':(context) => ListTileWidget(),
+        'listView':(context) => ListViewWidget(),
+        'listWheelScrollView':(context) => ListWheelScrollViewWidget(),
+        'longPressDraggle':(context) => LongPressDraggleWidget(),
+        'materialApp':(context) => MaterialAppWidget(),
+        'materialBanner':(context) => MaterialBannerWidget(),
+        'materialButton':(context) => MaterialButtonWidget(),
+        'mergeSemantics':(context) => MergeSemanticWidget(),
+        'modalBarrier':(context) => ModalBarrierWidget(),
+        'mouseRegion1:':(context) => MouseRegionWidget1(),
+        'navigationBar':(context) => NavigationBarWidget(),
+        'notificationListner':(context) => NotificationListenerWidget(),
+        'offStage':(context) => OffStageWidget(),
+
         // 'flow':(context) => FlowWidget(),
       },
     );

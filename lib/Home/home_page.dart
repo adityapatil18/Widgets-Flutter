@@ -626,6 +626,222 @@ class HomePage extends StatelessWidget {
             //     Navigator.pushNamed(context, 'flow');
             //   },
             // ),
+            ListTile(
+              title: Text(' Flutter Logo  '),
+              onTap: () {
+                Navigator.pushNamed(context, 'flutterLogo');
+              },
+            ),
+            ListTile(
+              title: Text(' Form  '),
+              onTap: () {
+                Navigator.pushNamed(context, 'form');
+              },
+            ),
+            ListTile(
+              title: Text(' Fractionally Sized Box   '),
+              onTap: () {
+                Navigator.pushNamed(context, 'fractionallySizedBox');
+              },
+            ),
+            ListTile(
+              title: Text(' Fractional Translation   '),
+              onTap: () {
+                Navigator.pushNamed(context, 'fractionalTransalation');
+              },
+            ),
+            ListTile(
+              title: Text(' Future Builder   '),
+              onTap: () {
+                Navigator.pushNamed(context, 'futureBuilder');
+              },
+            ),
+            ListTile(
+              title: Text(' Gesture Detector   '),
+              onTap: () {
+                Navigator.pushNamed(context, 'gestureDetector');
+              },
+            ),
+            ListTile(
+              title: Text(' Grid Paper   '),
+              onTap: () {
+                Navigator.pushNamed(context, 'gridPaper');
+              },
+            ),
+            ListTile(
+              title: Text(' Grid Tile   '),
+              onTap: () {
+                Navigator.pushNamed(context, 'gridTile');
+              },
+            ),
+            ListTile(
+              title: Text(' Grid Tile Bar  '),
+              onTap: () {
+                Navigator.pushNamed(context, 'gridTileBar');
+              },
+            ),
+            ListTile(
+              title: Text(' Grid View  '),
+              onTap: () {
+                Navigator.pushNamed(context, 'gridView');
+              },
+            ),
+            ListTile(
+              title: Text(' Hero  '),
+              onTap: () {
+                Navigator.pushNamed(context, 'hero');
+              },
+            ),
+            ListTile(
+              title: Text(' Icon  '),
+              onTap: () {
+                Navigator.pushNamed(context, 'icon');
+              },
+            ),
+            ListTile(
+              title: Text(' Icon Button '),
+              onTap: () {
+                Navigator.pushNamed(context, 'iconButton');
+              },
+            ),
+            ListTile(
+              title: Text(' Ignore Pointer '),
+              onTap: () {
+                Navigator.pushNamed(context, 'ignorePointer');
+              },
+            ),
+            ListTile(
+              title: Text(' Image '),
+              onTap: () {
+                Navigator.pushNamed(context, 'image');
+              },
+            ),
+            ListTile(
+              title: Text(' Indexed stack '),
+              onTap: () {
+                Navigator.pushNamed(context, 'indexedStack');
+              },
+            ),
+            ListTile(
+              title: Text(' InkWell '),
+              onTap: () {
+                Navigator.pushNamed(context, 'inkwell');
+              },
+            ),
+            ListTile(
+              title: Text(' Input Chip '),
+              onTap: () {
+                Navigator.pushNamed(context, 'inputChip');
+              },
+            ),
+            ListTile(
+              title: Text(' Interactive Viwer '),
+              onTap: () {
+                Navigator.pushNamed(context, 'interactiveViwer');
+              },
+            ),
+            ListTile(
+              title: Text(' Layout Builder'),
+              onTap: () {
+                Navigator.pushNamed(context, 'layoutBuilder');
+              },
+            ),
+            ListTile(
+              title: Text(' Limited Box'),
+              onTap: () {
+                Navigator.pushNamed(context, 'limitedBox');
+              },
+            ),
+            ListTile(
+              title: Text('Linear Progress Indicator'),
+              onTap: () {
+                Navigator.pushNamed(context, 'linearProgressIndicator');
+              },
+            ),
+            ListTile(
+              title: Text('Listner'),
+              onTap: () {
+                Navigator.pushNamed(context, 'listner');
+              },
+            ),
+            ListTile(
+              title: Text('List Tile'),
+              onTap: () {
+                Navigator.pushNamed(context, 'lisTile');
+              },
+            ),
+            ListTile(
+              title: Text('List View'),
+              onTap: () {
+                Navigator.pushNamed(context, 'listView');
+              },
+            ),
+            ListTile(
+              title: Text('List wheel scroll view'),
+              onTap: () {
+                Navigator.pushNamed(context, 'listWheelScrollView');
+              },
+            ),
+            ListTile(
+              title: Text('Long press draggle'),
+              onTap: () {
+                Navigator.pushNamed(context, 'longPressDraggle');
+              },
+            ),
+            ListTile(
+              title: Text('Material App'),
+              onTap: () {
+                Navigator.pushNamed(context, 'materialApp');
+              },
+            ),
+            ListTile(
+              title: Text('Material Banner'),
+              onTap: () {
+                Navigator.pushNamed(context, 'materialBanner');
+              },
+            ),
+            ListTile(
+              title: Text('Material Button'),
+              onTap: () {
+                Navigator.pushNamed(context, 'materialButton');
+              },
+            ),
+             ListTile(
+              title: Text('Merge Semantics'),
+              onTap: () {
+                Navigator.pushNamed(context, 'mergeSemantics');
+              },
+            ),
+            ListTile(
+              title: Text('Modal Barrier'),
+              onTap: () {
+                Navigator.pushNamed(context, 'modalBarrier');
+              },
+            ),
+            ListTile(
+              title: Text('Mouse Region'),
+              onTap: () {
+                Navigator.pushNamed(context, 'mouseRegion1');
+              },
+            ),
+             ListTile(
+              title: Text('Navigation Bar'),
+              onTap: () {
+                Navigator.pushNamed(context, 'navigationBar');
+              },
+            ),
+            ListTile(
+              title: Text('Notification Listner '),
+              onTap: () {
+                Navigator.pushNamed(context, 'notificationListner');
+              },
+            ),
+             ListTile(
+              title: Text('Off Stage '),
+              onTap: () {
+                Navigator.pushNamed(context, 'offStage');
+              },
+            ),
           ],
         ),
       ),
