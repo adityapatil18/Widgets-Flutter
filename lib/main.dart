@@ -108,6 +108,31 @@ import 'package:widgets/Home/Widgets/mouse_region.dart';
 import 'package:widgets/Home/Widgets/navigation_bar.dart';
 import 'package:widgets/Home/Widgets/notification_listener.dart';
 import 'package:widgets/Home/Widgets/offStage.dart';
+import 'package:widgets/Home/Widgets/opacity.dart';
+import 'package:widgets/Home/Widgets/orientaion_builder.dart';
+import 'package:widgets/Home/Widgets/outlined_button.dart';
+import 'package:widgets/Home/Widgets/overflow_bar.dart';
+import 'package:widgets/Home/Widgets/overflow_box.dart';
+import 'package:widgets/Home/Widgets/padding.dart';
+import 'package:widgets/Home/Widgets/page_view.dart';
+import 'package:widgets/Home/Widgets/physical_modal.dart';
+import 'package:widgets/Home/Widgets/physical_shape.dart';
+import 'package:widgets/Home/Widgets/placeholder.dart';
+import 'package:widgets/Home/Widgets/platform_menu_bar.dart';
+import 'package:widgets/Home/Widgets/popup_menu_button.dart';
+import 'package:widgets/Home/Widgets/postioned.dart';
+import 'package:widgets/Home/Widgets/postioned_transition.dart';
+import 'package:widgets/Home/Widgets/preferred_size.dart';
+import 'package:widgets/Home/Widgets/radio.dart';
+import 'package:widgets/Home/Widgets/radio_list_tile.dart';
+import 'package:widgets/Home/Widgets/range_slider.dart';
+import 'package:widgets/Home/Widgets/raw_auto_complete.dart';
+import 'package:widgets/Home/Widgets/raw_chip.dart';
+import 'package:widgets/Home/Widgets/redorable_list_view.dart';
+import 'package:widgets/Home/Widgets/refresh_indicator.dart';
+import 'package:widgets/Home/Widgets/rich_text.dart';
+import 'package:widgets/Home/Widgets/roataion_transition.dart';
+import 'package:widgets/Home/Widgets/rotaed_box.dart';
 
 import 'Home/Cupertino_Widgets/cupertino_search_text_field.dart';
 import 'Home/Cupertino_Widgets/cupertino_segemented_controller.dart';
@@ -267,35 +292,61 @@ class Widgets extends StatelessWidget {
         'futureBuilder': (context) => FutureBuilderWidget(),
         'gestureDetector': (context) => GestureDetectorWidget(),
         'gridPaper': (context) => GridPaperWidget(),
-        'gridTile':(context) => GridTileWidget(),
-        'gridTileBar':(context) => GridTileBarWidget(),
-        'gridView':(context) => GridViewWidget(),
-        'hero':(context) => HeroWidget(),
-        'icon':(context) => IconWidget(),
-        'iconButton':(context) => IconButtonWidget(),
-        'ignorePointer':(context) => IgnorePointerWidget(),
-        'image':(context) => ImahgeWidget(),
-        'indexedStack':(context) => IndexedStackWidget(),
-        'inkwell':(context) => InkWellWidget(),
-        'inputChip':(context) => InputChipWidget(),
-        'interactiveViwer':(context) => InteractiveViwerWidget(),
-        'layoutBuilder':(context) => LayoutBuilderWidget(),
-        'limitedBox':(context) => LimittedBoxWidget(),
-        'linearProgressIndicator':(context) => LinearProgressIndicatorWidgets(),
-        'listner':(context) => ListnerWidget(),
-        'lisTile':(context) => ListTileWidget(),
-        'listView':(context) => ListViewWidget(),
-        'listWheelScrollView':(context) => ListWheelScrollViewWidget(),
-        'longPressDraggle':(context) => LongPressDraggleWidget(),
-        'materialApp':(context) => MaterialAppWidget(),
-        'materialBanner':(context) => MaterialBannerWidget(),
-        'materialButton':(context) => MaterialButtonWidget(),
-        'mergeSemantics':(context) => MergeSemanticWidget(),
-        'modalBarrier':(context) => ModalBarrierWidget(),
-        'mouseRegion1:':(context) => MouseRegionWidget1(),
-        'navigationBar':(context) => NavigationBarWidget(),
-        'notificationListner':(context) => NotificationListenerWidget(),
-        'offStage':(context) => OffStageWidget(),
+        'gridTile': (context) => GridTileWidget(),
+        'gridTileBar': (context) => GridTileBarWidget(),
+        'gridView': (context) => GridViewWidget(),
+        'hero': (context) => HeroWidget(),
+        'icon': (context) => IconWidget(),
+        'iconButton': (context) => IconButtonWidget(),
+        'ignorePointer': (context) => IgnorePointerWidget(),
+        'image': (context) => ImahgeWidget(),
+        'indexedStack': (context) => IndexedStackWidget(),
+        'inkwell': (context) => InkWellWidget(),
+        'inputChip': (context) => InputChipWidget(),
+        'interactiveViwer': (context) => InteractiveViwerWidget(),
+        'layoutBuilder': (context) => LayoutBuilderWidget(),
+        'limitedBox': (context) => LimittedBoxWidget(),
+        'linearProgressIndicator': (context) =>
+            LinearProgressIndicatorWidgets(),
+        'listner': (context) => ListnerWidget(),
+        'lisTile': (context) => ListTileWidget(),
+        'listView': (context) => ListViewWidget(),
+        'listWheelScrollView': (context) => ListWheelScrollViewWidget(),
+        'longPressDraggle': (context) => LongPressDraggleWidget(),
+        'materialApp': (context) => MaterialAppWidget(),
+        'materialBanner': (context) => MaterialBannerWidget(),
+        'materialButton': (context) => MaterialButtonWidget(),
+        'mergeSemantics': (context) => MergeSemanticWidget(),
+        'modalBarrier': (context) => ModalBarrierWidget(),
+        'mouseRegion1:': (context) => MouseRegionWidget1(),
+        'navigationBar': (context) => NavigationBarWidget(),
+        'notificationListner': (context) => NotificationListenerWidget(),
+        'offStage': (context) => OffStageWidget(),
+        'opacity': (context) => OpacityaWidget(),
+        'orientationBuilder': (context) => OrientationBuilderWidget(),
+        'outlinedButton': (context) => OutlinedButtonWidget(),
+        'overflowBar': (context) => OverFlowBarWidget(),
+        'overFlowBox': (context) => OverFlowBoxSWidget(),
+        'padding': (context) => PaddingWidget(),
+        'pageView': (context) => PageViewWidget(),
+        'physicalModal': (context) => PhysicalModalWidget(),
+        'physicalShape': (context) => PhysicalShapeWidget(),
+        'placeholder': (context) => PlaceholderWidget(),
+        'platformMenuBar': (context) => PlatformMenuBarWidget(),
+        'popUpMenuButton': (context) => PopUpMenuButtonWidget(),
+        'postioned': (context) => PositionedWidget(),
+        'postionedTransitio': (context) => PostionedTransionWidget(),
+        'preferedSize':(context) => PreferedSizeWidget1(),
+        'radio':(context) => RadioWidget(),
+        'radiolistTile':(context) => RadioListTileWidget(),
+        'rangeSlider':(context) => RangeSliderWidget(),
+        'rawAutoComplete':(context) => RawAutoCompleteWidget(),
+        'rawChip':(context) => RawChipWidget(),
+        'refershIndicator':(context) => RefereshIndicatorWidget(),
+        'redorableListView':(context) => RedorableListViewWidget(),
+        'richText':(context) => RichTextWidget(),
+        'roatedBox':(context) => RoatedBoxWidget(),
+        'rotationTransition':(context) => RotationTransitionWidget(),
 
         // 'flow':(context) => FlowWidget(),
       },

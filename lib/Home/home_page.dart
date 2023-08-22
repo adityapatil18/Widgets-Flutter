@@ -806,7 +806,7 @@ class HomePage extends StatelessWidget {
                 Navigator.pushNamed(context, 'materialButton');
               },
             ),
-             ListTile(
+            ListTile(
               title: Text('Merge Semantics'),
               onTap: () {
                 Navigator.pushNamed(context, 'mergeSemantics');
@@ -824,7 +824,7 @@ class HomePage extends StatelessWidget {
                 Navigator.pushNamed(context, 'mouseRegion1');
               },
             ),
-             ListTile(
+            ListTile(
               title: Text('Navigation Bar'),
               onTap: () {
                 Navigator.pushNamed(context, 'navigationBar');
@@ -836,10 +836,160 @@ class HomePage extends StatelessWidget {
                 Navigator.pushNamed(context, 'notificationListner');
               },
             ),
-             ListTile(
+            ListTile(
               title: Text('Off Stage '),
               onTap: () {
                 Navigator.pushNamed(context, 'offStage');
+              },
+            ),
+            ListTile(
+              title: Text('Opacity '),
+              onTap: () {
+                Navigator.pushNamed(context, 'opacity');
+              },
+            ),
+            ListTile(
+              title: Text('Orientation Builder '),
+              onTap: () {
+                Navigator.pushNamed(context, 'orientationBuilder');
+              },
+            ),
+            ListTile(
+              title: Text('Outlined Button '),
+              onTap: () {
+                Navigator.pushNamed(context, 'outlinedButton');
+              },
+            ),
+            ListTile(
+              title: Text('OverFlow Bar '),
+              onTap: () {
+                Navigator.pushNamed(context, 'overflowBar');
+              },
+            ),
+            ListTile(
+              title: Text('OverFlow Box '),
+              onTap: () {
+                Navigator.pushNamed(context, 'overFlowBox');
+              },
+            ),
+            ListTile(
+              title: Text('Padding '),
+              onTap: () {
+                Navigator.pushNamed(context, 'padding');
+              },
+            ),
+            ListTile(
+              title: Text('Page View '),
+              onTap: () {
+                Navigator.pushNamed(context, 'pageView');
+              },
+            ),
+            ListTile(
+              title: Text('Physical Modal '),
+              onTap: () {
+                Navigator.pushNamed(context, 'physicalModal');
+              },
+            ),
+            ListTile(
+              title: Text('Physical Shape '),
+              onTap: () {
+                Navigator.pushNamed(context, 'physicalShape');
+              },
+            ),
+            ListTile(
+              title: Text('Placeholder '),
+              onTap: () {
+                Navigator.pushNamed(context, 'placeholder');
+              },
+            ),
+            ListTile(
+              title: Text('Platform Menu Bar '),
+              onTap: () {
+                Navigator.pushNamed(context, 'platformMenuBar');
+              },
+            ),
+            ListTile(
+              title: Text('Popup menu button '),
+              onTap: () {
+                Navigator.pushNamed(context, 'popUpMenuButton');
+              },
+            ),
+            ListTile(
+              title: Text('Positoned '),
+              onTap: () {
+                Navigator.pushNamed(context, 'postioned');
+              },
+            ),
+            ListTile(
+              title: Text('Positoned Transition'),
+              onTap: () {
+                Navigator.pushNamed(context, 'postionedTransitio');
+              },
+            ),
+            ListTile(
+              title: Text('Preferd Size'),
+              onTap: () {
+                Navigator.pushNamed(context, 'preferedSize');
+              },
+            ),
+            ListTile(
+              title: Text('Radio'),
+              onTap: () {
+                Navigator.pushNamed(context, 'radio');
+              },
+            ),
+            ListTile(
+              title: Text('Radio List Tile'),
+              onTap: () {
+                Navigator.pushNamed(context, 'radiolistTile');
+              },
+            ),
+            ListTile(
+              title: Text('Range Slider'),
+              onTap: () {
+                Navigator.pushNamed(context, 'rangeSlider');
+              },
+            ),
+            ListTile(
+              title: Text('Raw Auto Complete'),
+              onTap: () {
+                Navigator.pushNamed(context, 'rawAutoComplete');
+              },
+            ),
+            ListTile(
+              title: Text('Raw Chip'),
+              onTap: () {
+                Navigator.pushNamed(context, 'rawChip');
+              },
+            ),
+             ListTile(
+              title: Text('Refersh Indicator'),
+              onTap: () {
+                Navigator.pushNamed(context, 'refershIndicator');
+              },
+            ),
+            ListTile(
+              title: Text('Redorable List View'),
+              onTap: () {
+                Navigator.pushNamed(context, 'redorableListView');
+              },
+            ),
+            ListTile(
+              title: Text('Rich Text'),
+              onTap: () {
+                Navigator.pushNamed(context, 'richText');
+              },
+            ),
+            ListTile(
+              title: Text('Roated Box'),
+              onTap: () {
+                Navigator.pushNamed(context, 'roatedBox');
+              },
+            ),
+             ListTile(
+              title: Text('Roatation Transition'),
+              onTap: () {
+                Navigator.pushNamed(context, 'rotationTransition');
               },
             ),
           ],
