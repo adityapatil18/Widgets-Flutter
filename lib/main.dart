@@ -133,6 +133,56 @@ import 'package:widgets/Home/Widgets/refresh_indicator.dart';
 import 'package:widgets/Home/Widgets/rich_text.dart';
 import 'package:widgets/Home/Widgets/roataion_transition.dart';
 import 'package:widgets/Home/Widgets/rotaed_box.dart';
+import 'package:widgets/Home/Widgets/row.dart';
+import 'package:widgets/Home/Widgets/safe_area.dart';
+import 'package:widgets/Home/Widgets/scaffold.dart';
+import 'package:widgets/Home/Widgets/scale_transition.dart';
+import 'package:widgets/Home/Widgets/scroll_bar.dart';
+import 'package:widgets/Home/Widgets/selectable_text.dart';
+import 'package:widgets/Home/Widgets/semantics.dart';
+import 'package:widgets/Home/Widgets/shader_mask.dart';
+import 'package:widgets/Home/Widgets/shortcuts.dart';
+import 'package:widgets/Home/Widgets/silver_fixed_extent_list.dart';
+import 'package:widgets/Home/Widgets/silver_grid.dart';
+import 'package:widgets/Home/Widgets/silver_opacity.dart';
+import 'package:widgets/Home/Widgets/silver_to_box_adpater.dart';
+import 'package:widgets/Home/Widgets/simple_dialog.dart';
+import 'package:widgets/Home/Widgets/single_child_scroll_view.dart';
+import 'package:widgets/Home/Widgets/size_transition.dart';
+import 'package:widgets/Home/Widgets/sized_box.dart';
+import 'package:widgets/Home/Widgets/sized_over_flow_box.dart';
+import 'package:widgets/Home/Widgets/slide_transition.dart';
+import 'package:widgets/Home/Widgets/slider.dart';
+import 'package:widgets/Home/Widgets/sliver_app_bar.dart';
+import 'package:widgets/Home/Widgets/sliver_list.dart';
+import 'package:widgets/Home/Widgets/sliver_padding.dart';
+import 'package:widgets/Home/Widgets/snack_bar.dart';
+import 'package:widgets/Home/Widgets/spacer.dart';
+import 'package:widgets/Home/Widgets/stack.dart';
+import 'package:widgets/Home/Widgets/stepper.dart';
+import 'package:widgets/Home/Widgets/stream_builder.dart';
+import 'package:widgets/Home/Widgets/switch.dart';
+import 'package:widgets/Home/Widgets/switch_list_tile.dart';
+import 'package:widgets/Home/Widgets/system_mouse_cursors.dart';
+import 'package:widgets/Home/Widgets/tab_bar.dart';
+import 'package:widgets/Home/Widgets/tab_page_selector.dart';
+import 'package:widgets/Home/Widgets/table.dart';
+import 'package:widgets/Home/Widgets/text.dart';
+import 'package:widgets/Home/Widgets/textButton.dart';
+import 'package:widgets/Home/Widgets/text_field.dart';
+import 'package:widgets/Home/Widgets/text_form_field.dart';
+import 'package:widgets/Home/Widgets/text_span.dart';
+import 'package:widgets/Home/Widgets/theme_data.dart';
+import 'package:widgets/Home/Widgets/time_picker.dart';
+import 'package:widgets/Home/Widgets/toggle_buttons.dart';
+import 'package:widgets/Home/Widgets/tool_tip.dart';
+import 'package:widgets/Home/Widgets/transform.dart';
+import 'package:widgets/Home/Widgets/tweenAnimationBuilder.dart';
+import 'package:widgets/Home/Widgets/value_listenable_builder.dart';
+import 'package:widgets/Home/Widgets/vertical_divider.dart';
+import 'package:widgets/Home/Widgets/visibility.dart';
+import 'package:widgets/Home/Widgets/will_pop_scope.dart';
+import 'package:widgets/Home/Widgets/wrap.dart';
 
 import 'Home/Cupertino_Widgets/cupertino_search_text_field.dart';
 import 'Home/Cupertino_Widgets/cupertino_segemented_controller.dart';
@@ -347,6 +397,56 @@ class Widgets extends StatelessWidget {
         'richText':(context) => RichTextWidget(),
         'roatedBox':(context) => RoatedBoxWidget(),
         'rotationTransition':(context) => RotationTransitionWidget(),
+        'row':(context) => RowWidget(),
+        'safeArea':(context) => SafeAreaWidget(),
+        'scaffold':(context) => ScaffoldWidget(),
+        'scaleTransition':(context) => ScaleTransitionWidget(),
+        'scrollBar':(context) => ScrollBarWidget(),
+        'selectableText':(context) => SelectableTextWidget(),
+        'semantics':(context) => SemanticWidget(),
+        'shaderMask':(context) => ShaderMaskWidget(),
+        'shortCuts':(context) => ShortcutsWidget(),
+        'simpleDialog':(context) => SimpleDialogWidget(),
+        'singleChildScrollView':(context) => SingleChildScrollViewWidget(),
+        'sizeTransition':(context) => SizeTransitionWidget(),
+        'sizedBox': (context) => SizedBoxWidget(),
+        'sizedOverFlowBox':(context) => SizedOverFlowBoxWidget(),
+        'slideTransition':(context) => SlideTransitionWidget(),
+        'slider':(context) => SliderWidget(),
+        'silverAppBar':(context) => SilverAppBarWidget(),
+        'silverFixedExtentList':(context) => SilverFixedExtentListWidget(),
+        'silverGrid':(context) => SilverGridWidget(),
+        'silverList':(context) => SilverListWidget(),
+        'silverOpacity':(context) => SilverOpacityWidget(),
+        'silverPadding':(context) => SilverPaddingWidget(),
+        'silverToBoxAdpater':(context) => SilverToBoXAdpaterWidget(),
+        'snackBar':(context) => SnackBarWidget(),
+        'spacer':(context) => SpacerWidget(),
+        'stack':(context) => StackWidget(),
+        'steper':(context) => StepperWidget(),
+        'streamBuilder':(context) => StreamBuilderWidget(),
+        'switch':(context) => SwitchWidget(),
+        'switchListTile':(context) => SwitchListTileWidget(),
+        'systemMouseCursers':(context) => SystemMouseCuresorsWidget(),
+        'tabPageSelector':(context) => TabPageSelectorWidget(),
+        'table':(context) => Tablewidget(),
+        'tabBar':(context) => TabBarWidget(),
+        'text':(context) => TextWidget(),
+        'textButton':(context) => TextButtonWidget(),
+        'textField':(context) => TextFieldWidget(),
+        'textFormField':(context) => TextFormFieldWidget(),
+        'themeData':(context) => ThemeDataWidget(),
+        'textSpan':(context) => TextSpanWidget(),
+        'timePicker':(context) => TimePickerWidget(),
+        'toggleButton':(context) => ToggleButtonWidgegt(),
+        'toolTip':(context) => ToolTipWidgets(),
+        'transform':(context) => TransformWidget(),
+        'tweenAnimationBuilder':(context) => TweenAnimationBuilderWidget(),
+        'valueListenableBuilder':(context) => ValueListenableBuildeWidget(),
+        'verticalDivider':(context) => VerticalDivideWidget(),
+        'visibilty':(context) => VisibilityWidget(),
+        'willPopScope':(context) => WillPopScopeWidget(),
+        'wrap':(context) => WrapWidget(),
 
         // 'flow':(context) => FlowWidget(),
       },
